@@ -11,7 +11,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Scripts -->
@@ -23,10 +23,10 @@
     <div class="flex flex-col min-h-screen bg-white">
         <!-- Logo -->
         <div class="py-8 text-center">
-            <img src="{{ asset('path/to/bmp-logo.png') }}" alt="BMP Logo" class="mx-auto h-24">
+            <img src="{{ asset('assets/logowithtext.png') }}" alt="BMP Logo" class="mx-auto h-24">
         </div>
         <div class="flex-grow flex items-center justify-center bg-[#0f294c]">
-            <div class="w-full max-w-md bg-[#0f294c] px-5 py-10 rounded-lg">
+            <div class="w-[50%] bg-[#0f294c] py-10 rounded-lg">
                 {{ $slot }}
             </div>
         </div>
@@ -69,7 +69,7 @@
 
             <!-- Social Media and Copyright -->
             <div class="mt-10">
-                <img src="{{ asset('path/to/bmp-footer-logo.png') }}" alt="BMP Footer Logo" class="mx-auto h-14">
+                <img src="{{ asset('assets/bmp_logo.png') }}" alt="BMP Footer Logo" class="mx-auto h-14">
                 <div class="flex justify-center space-x-6 mt-4">
                     <a href="#" class="text-[#0f294c]"><i class="fab fa-x-twitter text-2xl"></i></a>
                     <a href="#" class="text-[#0f294c]"><i class="fab fa-facebook text-2xl"></i></a>

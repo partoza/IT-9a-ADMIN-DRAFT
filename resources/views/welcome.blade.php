@@ -12,6 +12,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
 </head>
 
 <body class="font-sans h-screen w-full">
@@ -21,14 +22,14 @@
             <div class="container mx-auto flex justify-between items-center px-6">
                 <!-- Logo -->
                 <a href="#" class="flex items-center">
-                    <img src="path/to/logo.png" alt="BMP Logo" class="h-8"> <!-- Update with actual logo path -->
+                    <img src="{{asset('assets/bmp_logo.png')}}" alt="BMP Logo" class="h-8"> <!-- Update with actual logo path -->
                 </a>
 
                 <!-- Navigation Menu -->
                 @if (Route::has('login'))
                 <nav class="flex space-x-8 uppercase font-semibold tracking-wide">
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="hover:text-gray-700 dark:hover:text-gray-300">Dashboard</a>
+                    <a href="{{ url('/dashboard') }}" class="hover:text-gray-700 dark:hover:text-gray-300">Dashboard</a>
                     @else
                     <a href="#" class="hover:text-gray-700 dark:hover:text-gray-300">Home</a>
                     <a href="#" class="hover:text-gray-700 dark:hover:text-gray-300">Cars</a>
@@ -49,8 +50,8 @@
             <!-- Hero Section -->
             <section class="relative bg-[#0f1021] text-white py-50 text-center flex flex-col justify-center">
                 <div class="absolute inset-0 flex justify-between">
-                    <img src="path/to/car-left.png" class="w-[28%] max-w-md" alt="Car Left">
-                    <img src="path/to/car-right.png" class="w-[28%] max-w-md" alt="Car Right">
+                    <img src="{{ asset('assets/carleft.svg') }}" class="w-[35%]" alt="Car Left">
+                    <img src="{{ asset('assets/carright.svg') }}" class="w-[35%]" alt="Car Right">
                 </div>
                 <div class="relative z-10 container mx-auto px-6">
                     <h1 class="text-5xl font-bold uppercase">RENT A CAR <span class="text-[#ff335f] italic">TODAY</span>
@@ -59,6 +60,7 @@
                     <p class="mt-2 text-sm max-w-2xl mx-auto">
                         Find the perfect rental car for your family and enjoy a smooth, stress-free journey wherever you
                         go.
+                        <br>
                         With a wide range of comfortable and reliable vehicles, you get the freedom to travel on your
                         terms!
                     </p>
@@ -120,12 +122,12 @@
                     <div>
                         <h2 class="text-2xl font-bold mb-6">OUR CAR BRANDS</h2>
                         <div class="grid grid-cols-3 gap-8 justify-center items-center">
-                            <img src="path/to/toyota-logo.png" alt="Toyota" class="h-12 mx-auto">
-                            <img src="path/to/honda-logo.png" alt="Honda" class="h-12 mx-auto">
-                            <img src="path/to/ford-logo.png" alt="Ford" class="h-12 mx-auto">
-                            <img src="path/to/mitsubishi-logo.png" alt="Mitsubishi" class="h-12 mx-auto">
-                            <img src="path/to/suzuki-logo.png" alt="Suzuki" class="h-12 mx-auto">
-                            <img src="path/to/nissan-logo.png" alt="Nissan" class="h-12 mx-auto">
+                            <img src="{{ asset('assets/brands/icon_toyota.png') }}" alt="Toyota" class="h-20 mx-auto">
+                            <img src="{{ asset('assets/brands/icon_honda.png') }}" alt="Honda" class="h-20 mx-auto">
+                            <img src="{{ asset('assets/brands/icon_ford.png') }}" alt="Ford" class="h-20 mx-auto">
+                            <img src="{{ asset('assets/brands/icon_mitshubishi.png') }}" alt="Mitsubishi" class="h-15 mx-auto">
+                            <img src="{{ asset('assets/brands/icon_suzuki.png') }}" alt="Suzuki" class="h-15 mx-auto">
+                            <img src="{{ asset('assets/brands/icon_nissan.png') }}" alt="Nissan" class="h-20 mx-auto">
                         </div>
                     </div>
 
