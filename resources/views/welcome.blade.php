@@ -31,7 +31,7 @@
                     @auth
                     <a href="{{ url('/dashboard') }}" class="hover:text-gray-700 dark:hover:text-gray-300">Dashboard</a>
                     @else
-                    <a href="#" class="hover:text-gray-700 dark:hover:text-gray-300">Home</a>
+                    <a href="#" class="hover:text-gray-700 dark:hover:text-gray-300">Dashboard</a>
                     <a href="#" class="hover:text-gray-700 dark:hover:text-gray-300">Cars</a>
                     <a href="#" class="hover:text-gray-700 dark:hover:text-gray-300">Booking</a>
                     <a href="#" class="hover:text-gray-700 dark:hover:text-gray-300">Contacts</a>
