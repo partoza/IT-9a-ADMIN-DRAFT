@@ -12,13 +12,9 @@ Route::get('/admin-dashboard', function () {
     return view('admin.dashboard'); 
 })->name('admin.dashboard');
 
-Route::get('/admin-upcoming_bookings', function () {
-    return view('admin.upcoming_bookings');  
-})->name('admin.upcoming_bookings');
-
-Route::get('/admin-active_bookings', function () {
-    return view('admin.active_bookings');  
-})->name('admin.active_bookings');
+Route::get('/admin-bookings', function () {
+    return view('admin.bookings');  
+})->name('admin.bookings');
 
 Route::get('/admin-car_modification', function () {
     return view('admin.car_modification');  
@@ -51,10 +47,6 @@ Route::get('/admin-report_analytics', function () {
 Route::get('/admin-employee', function () {
     return view('admin.employee');  
 })->name('admin.employee');
-
-
-
-
 
 Route::get('/dashboard', function () {
     return view('dashboard');
